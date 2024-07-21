@@ -40,3 +40,23 @@
   flex-flow: column;
   align-items: center;
 }
+.game-winner {
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: dotted;
+  /* flex-flow: row; */
+}
+.game-winner-symbol.isX {
+  padding-left: 5px;
+  display: inline-block;
+  color: #2cccff;
+}
+.game-winner-symbol.isO {
+  padding-left: 5px;
+  display: inline-block;
+  color: #ff6651;
+}

@@ -24,7 +24,16 @@ function Game(props) {
 
   return (
     <div className="wrapper">
-      {winner ? `Winner is ${winner}` : ""}
+      <div className="game-winner">
+        {winner ? "The winner is " : ""}
+        <p
+          className={
+            winner === "X" ? "game-winner-symbol isX" : "game-winner-symbol isO"
+          }
+        >
+          {winner ? winner : ""}
+        </p>
+      </div>
       <Board cells={board} onClick={handleClick}></Board>
 
       <button className="button-reset" onClick={handleResetGame}>
