@@ -4,7 +4,6 @@ import Toggle from "./components/toogle/Toggle";
 function App() {
   return (
     <div>
-      <Toggle></Toggle>
       <Game></Game>
     </div>
   );
